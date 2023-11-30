@@ -2,11 +2,11 @@
 <%= simple_form_for [@list, @bookmark] do |f| %>
   <%= f.input :comment %>
   <%= f.association :movie %>
-  <%= f.submit %>
+  <%= f.button :submit, class: "btn-primary" %>
 <% end %>
 
 <br>
 <br>
-<%= link_to "Retour à l'index (parce que j'ai la flemme de taper l'url everytime)", lists_path, class: "btn btn-warning" %>
+<%= link_to "Retour à l'index", lists_path, class: "btn btn-warning" %>
 
 </div>

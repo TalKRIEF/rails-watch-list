@@ -1,12 +1,21 @@
 <div class="container">
-<h1><%= @list.name %></h1>
-<% @list.movies.each do |movie| %>
-<p> <%= movie.title %></p>
-<% end %>
+  <h1><%= @list.name %></h1>
+    <% @list.movies.each do |movie| %>
+      <p> <%= movie.title %></p><br>
+      <p><%= movie.overview %></p>
+      <%= Bookmark.find_by(movie_id: movie.id, list_id: @list.id).comment %>
+  <%= link_to 'Delete', bookmark_path(Bookmark.find_by(movie_id: movie.id, list_id: @list.id)), data: { turbo_method: :delete } %>
 
-<br>
-<%= link_to "Retour aux listes", lists_path, class: "btn btn-primary" %>
-<br>
-<%= link_to "Ajouter un nouveau movie/list", new_list_bookmark_path(@list), class: "btn btn-primary mt-5" %>
+  <%#= link_to 'delete', list_path(movie), class: "btn btn-danger", data: { turbo_method: :delete } %>
+  <% end %>
 
+  <div class="col-4 mt-5">
+    <%= simple_form_for [@list, @bookmark] do |f| %>
+      <%= f.input :comment %>
+      <%= f.association :movie %>
+      <%= f.button :submit, class: "btn-primary" %>
+    <% end %>
+  </div>
+
+  <%= link_to "Retour aux listes", lists_path, class: "btn btn-primary" %>
 </div>
