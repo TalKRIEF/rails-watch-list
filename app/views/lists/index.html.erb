@@ -1,7 +1,12 @@
-<ul>
-<% @lists.each do |list| %>
-<li><%= link_to list.name, list_path(list)%></li>
-<% end %>
-</ul>
+ <h1>
+  Listes
+ </h1>
+  <ul>
+    <% @lists.each do |list| %>
+     <div class="card-category" >
+      <li><%= link_to list.name, list_path(list)%></li>
+    <% end %>
+    </div>
+  </ul>
 <br>
 <%= link_to "Add a list bro ?", new_list_path %>

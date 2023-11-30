@@ -1,10 +1,9 @@
 <div class="container">
-<%= simple_form_for [@list, @bookmark] do |f| %>
-  <%= f.input :comment %>
-  <%= f.association :movie %>
-  <%= f.submit %>
-<% end %>
-
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+          <%= f.input :comment %>
+          <%= f.association :movie %>
+          <%= f.submit class: "btn btn-primary" %>
+        <% end %>
 <br>
 <br>
 <%= link_to "Retour à l'index (parce que j'ai la flemme de taper l'url everytime)", lists_path, class: "btn btn-warning" %>
