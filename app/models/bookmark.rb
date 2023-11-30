@@ -4,6 +4,6 @@ class Bookmark < ApplicationRecord
 
   validates :movie_id, presence: true
   validates :list_id, presence: true
-  validates :movie_id, uniqueness: { scope: :list_id, message: 'On avait dit une liaison unique svp' }
+  validates :movie_id, uniqueness: { scope: :list_id }
   validates :comment, length: { minimum: 6 }
 end
