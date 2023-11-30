@@ -1,0 +1,53 @@
+[33mcommit 8ebc60aa4544741d1aa5e949c52283efe976977a[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 22:22:44 2023 +0100
+
+    IT'S DONE
+
+[33mcommit c19ae22340d5ffb603f37a68b7aa6d14770720fe[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 21:21:41 2023 +0100
+
+    wtf ?
+
+[33mcommit 26a61c21614337c1b931a3013d1189ea4fc071e9[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 13:52:59 2023 +0100
+
+    damn le form marche
+
+[33mcommit ac9690ccb2647b35ffc74a8fbcf70f22a677e920[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 12:19:42 2023 +0100
+
+    lists action user done
+
+[33mcommit 2e22892ae0cd66148a76522360f1941e6d9db8da[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 11:42:37 2023 +0100
+
+    rspec all green for the DB
+
+[33mcommit bae6b14d556a6986692f5cc0d5724c592352ae56[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 11:39:47 2023 +0100
+
+    DB good green
+
+[33mcommit c467694c4453558ca5f3476489b9dfb83d5dfbcf[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 10:27:57 2023 +0100
+
+    setup done hopefully
+
+[33mcommit 45db0d15bd99a58340a62c3dc52343f9a9b56be0[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 10:21:45 2023 +0100
+
+    Prepare rails app with external specs
+
+[33mcommit cd891f2e68bda58f117d14519f23c99f44787856[m
+Author: Tal KRIEF <talkrief@gmail.com>
+Date:   Thu Nov 30 10:20:21 2023 +0100
+
+    rails new
