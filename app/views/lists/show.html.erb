@@ -1,0 +1,7 @@
+<h1><%= @list.name %></h1>
+<% @list.movies.each do |movie| %>
+<p> <%= movie.title %></p>
+<% end %>
+
+<br>
+<%= link_to "Retour aux listes", lists_path %>
