@@ -1,0 +1,21 @@
+<div class="container">
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie %>
+  <%= f.association :list %>
+  <%= f.button :submit, class: "btn-primary" %>
+<% end %>
+
+<br>
+<br>
+<%= link_to "Retour à l'index (parce que j'ai la flemme de taper l'url everytime)", lists_path, class: "btn btn-warning" %>
+
+</div>
+
+<%# <%= simple_form_for pet do |f| %>
+    <%# <%= f.input :name %>
+    <%# <%= f.input :address %>
+    <%# <%= f.input :species, collection: Pet::SPECIES, selected: Pet::SPECIES.first %>
+    <%# <%= f.input :found_on %>
+    <%# <%= f.button :submit, class: "btn-primary" %>
+  <%# <% end %>

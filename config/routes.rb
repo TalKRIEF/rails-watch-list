@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-
-  resources :lists
-  root "lists#index"
-
-
+  resources :movies
+  
+  resources :lists do
+    resources :bookmarks
+  end
+  root 'lists#index'
 end
