@@ -3,9 +3,19 @@
  </h1>
   <ul>
     <% @lists.each do |list| %>
-     <div class="card-category" >
-      <li><%= link_to list.name, list_path(list)%></li>
+      <div class="card" style="width: 18rem;">
+      <% if list.photo.attached? %>
+        <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill, class: "card-img-top" %>
+        <% end %>
+        <div class="card-body">
+          <h5 class="card-title"> <%= list.name %></h5>
+          <p class="card-text"> </p>
+          <%= link_to "Voir la liste", list_path(list), class: "btn btn-primary" %>
+        </div>
+      </div>
     <% end %>
+    </div>
+
     </div>
   </ul>
 <br>
